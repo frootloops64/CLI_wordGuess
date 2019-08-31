@@ -10,14 +10,15 @@ var sports = [
 var word = "";
 // var answerArray = [];
 
-var Word = function(answerArray, ) {
+var Word = function (answerArray) {
 
-    this.guessWord = function() {
+    this.guessWord = function () {
         var word = sports[Math.floor(Math.random() * sports.length)];
         var answerArray = [];
         for (var i = 0; i < word.length; i++) {
+            var letter = new letter()
             answerArray[i] = "_";
-        console.log(answerArray.join(" "));
+            console.log(answerArray.join(" "));
         }
     };
 }
